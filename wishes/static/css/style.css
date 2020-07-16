@@ -1,0 +1,212 @@
+:root{
+  --font-primary:'Rowdies', cursive;
+  --font-secondary:'Ranchers', cursive;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: url('/static/wishes/background.jpg') 50% 0 no-repeat fixed;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+ 
+}
+
+.sliding-text{
+  color:black;
+  top: 50%;
+  left: 50%;
+  padding: 0,20px;
+  overflow: hidden;
+  text-align: center;
+  font-size: 30px;
+  font-family: var(--font-secondary);
+  letter-spacing: 0.2rem;
+}
+.banner{
+  position: fixed;
+left: 0;
+bottom: 0;
+width: 100%;
+text-align: center;
+  
+}
+
+h1 {
+  font-size: 50px;
+  text-emphasis: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: var(--font-primary);
+}
+h4{
+  font-family: (--font-primary);
+  text-align: center;
+}
+.p{
+    font-family: var(--font-secondary);
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 50px;
+}
+
+
+/* slideshow start */
+
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 25px;
+  margin-top: -50px;
+  color:black;
+  font-weight: bold;
+  font-size: 50px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+  
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+/* slideshow end */
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+  .main h1{
+      font-size: 25px;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+  
+  .main h1{
+      font-size: 25px;
+  }
+}
+
+
+/* body{
+  margin: 0;
+  padding: 0;
+  background-color:  #89CFF0;
+}
+.top-text{
+  background: #4169e1;
+}
+.sliding-text{
+  color:white;
+  top: 50%;
+  left: 50%;
+  background: black;
+  padding: 0,40px;
+  overflow: hidden;
+}
+.line{
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 30px;
+}
+
+#blog{
+  text-align: center;
+  margin-top: 150px;
+}
+
+.blog-post{
+  background-color: white;
+  padding: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+img{
+  max-width: 100%;
+}
+
+
+.blog-post:hover{
+box-shadow: 15px 15px 25px #333;
+cursor: pointer;
+transform: translateX(-10px);
+transform: translateY(-10px);
+}
+*/

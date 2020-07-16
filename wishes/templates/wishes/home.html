@@ -38,10 +38,10 @@
         {% for w in wish %}
       <div class="column">
         <div class="content">
-          <img src="{{ w.image.url}}" alt="hbd" style="width:100%">
+          <img src="{{ w.image.url }}" alt="hbd" style="width:100%">
           <h4>{{ w.title}}</h4>
           <p>{{ w.description }}</p>
-          <h4>- {{w.by}}</h4>
+          <h4>{{w.by}}</h4>
         </div>
       </div>
       {% endfor %}
@@ -55,9 +55,6 @@
             <!-- Full-width images with number text -->
             <div class="mySlides">
                 <img src="{% static 'wishes/seven.jpg' %}" style="width:100%">
-            </div> 
-            <div class="mySlides">
-                <img src="{% static 'wishes/thirteen.jpg' %}" style="width:100%">
             </div> 
             <div class="mySlides">
                 <img src="{% static 'wishes/five.jpg' %}" style="width:100%">
